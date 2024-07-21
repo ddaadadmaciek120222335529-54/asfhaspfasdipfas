@@ -1,0 +1,56 @@
+---
+// Layout
+import LayoutMain from "../layouts/LayoutMain.astro";
+
+// Components
+import SectionTitle from "../components/common/SectionTitle.astro";
+
+const head = {
+	title: "Regulamin | Imponte Roleplay",
+	description:
+		"Zapoznaj się z regulaminem serwera Imponte Roleplay, aby zapewnić sobie i innym graczom najlepsze doświadczenie w świecie GTA RP. Przeczytaj zasady dotyczące rozgrywki, zachowania oraz obowiązków każdego członka społeczności. Przestrzeganie regulaminu gwarantuje bezpieczną i przyjemną grę dla wszystkich uczestników. Dowiedz się więcej i dołącz do naszej społeczności!",
+};
+---
+
+<LayoutMain title=`${head.title}` description=`${head.description}`>
+	<div class="background-gradient__container">
+		<div class="background-gradient--2"></div>
+		<div class="background-gradient--4"></div>
+	</div>
+
+	<section class="terms">
+		<div class="wrapper">
+			<SectionTitle
+				tac
+				title="Zapoznaj się z regulaminem naszego serwera"
+				subtitle="Regulamin serwera"
+			/>
+			<div class="terms__container">
+				<!-- Boxy -->
+				<div class="terms__box border">
+					<div class="terms__box-content">
+						<h4>1. Nagłówek 1</h4>
+						<ol>
+							<li>Lorem, ipsum dolor.</li>
+							<li>Lorem, ipsum dolor.</li>
+							<li>Lorem, ipsum dolor.</li>
+						</ol>
+					</div>
+				</div>
+
+				<div class="terms__box border">
+					<div class="terms__box-content">
+						<h4>1. Nagłówek 2</h4>
+						<ol>
+							<li>Lorem, ipsum dolor.</li>
+							<li>Lorem, ipsum dolor.</li>
+							<li>Lorem, ipsum dolor.</li>
+						</ol>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</LayoutMain>
+
+<script src="../js/components/border-glow.js"></script>

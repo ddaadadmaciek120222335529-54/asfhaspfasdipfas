@@ -1,0 +1,70 @@
+// ===========================================================================
+// Variables
+// ===========================================================================
+
+// General
+
+// https://uicolors.app/create
+
+$color-500: #edb66d;
+$color-600: #e89d4f;
+$color-700: #e3822c;
+$border-radius: 10px;
+
+$color-text: #fff;
+$color-background: #151515;
+$color-dark: #111111;
+$color-darker: #0f0f0f;
+$color-border: rgb(70, 70, 70);
+$text-gradient-shadow: linear-gradient(to bottom, #ffffff 50%, #a2a2a2 100%);
+$text-gradient-1: linear-gradient(
+	to right,
+	$color-500 0%,
+	$color-600 50%,
+	$color-700 100%
+);
+
+// Section padding
+// $section-padding-sm: 7.5rem;
+// $section-padding-md: 10rem;
+// $section-padding-lg: 12.5rem;
+// $section-padding-xl: 15rem;
+$section-padding-sm: 5rem;
+$section-padding-md: 7.5rem;
+$section-padding-lg: 7.5rem;
+$section-padding-xl: 10rem;
+
+// Typography
+$font-size-md: 1.6rem;
+$font-size-md: 1.6rem;
+
+$font-scale-sm: 1.2;
+$font-scale-md: 1.325;
+$font-scale-lg: 1.4;
+$font-scale-xl: 1.475;
+$font-scale-xxl: 1.525;
+$font-scale-xxxl: 1.575;
+// $font-scale-xxxl: 1.75;
+
+// Button
+$btn-color: #fff;
+$btn-font-weight: 400;
+$btn-padding: 1.5rem 3rem;
+$btn-padding-circle: 1.5rem;
+$btn-border-radius: $border-radius;
+$btn-border-width: 1px;
+
+$btn-solid-color: $color-500;
+$btn-border-color: $color-600;
+$btn-gradient-color: linear-gradient(
+	135deg,
+	rgb(56, 164, 110) 0%,
+	rgb(13, 55, 109) 100%
+);
+
+$btn-solid-disabled-color: rgb(48, 48, 48);
+$btn-gradient-disabled-color: linear-gradient(
+	135deg,
+	rgb(48, 48, 48) 0%,
+	rgb(90, 90, 90) 100%
+);

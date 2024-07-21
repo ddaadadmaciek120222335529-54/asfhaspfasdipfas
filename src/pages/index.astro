@@ -1,0 +1,169 @@
+---
+// Layout
+import LayoutMain from "../layouts/LayoutMain.astro";
+
+// Components
+import SectionTitle from "../components/common/SectionTitle.astro";
+
+import Button from "../components/common/Button.astro";
+import LinkButton from "../components/common/LinkButton.astro";
+import Link from "../components/common/Link.astro";
+
+const head = {
+	title: "Imponte Roleplay | Strona główna",
+	description:
+		"Dołącz do serwera Imponte Roleplay w GTA 5 i zanurz się w realistycznym świecie pełnym przygód i możliwości! Nasz serwer oferuje unikalne skrypty, rozbudowaną ekonomię oraz dynamiczną społeczność. Zostań kim chcesz - policjantem, przedsiębiorcą, gangsterem - i twórz własne historie w Los Santos. Dołącz do nas już dziś i sprawdź, dlaczego Imponte Roleplay to najlepszy wybór dla fanów GTA RP!",
+};
+---
+
+<LayoutMain title=`${head.title}` description=`${head.description}`>
+	<main>
+		<div class="background-gradient__container">
+			<div class="background-gradient--1"></div>
+			<div class="background-gradient--2"></div>
+			<div class="background-gradient--3"></div>
+		</div>
+
+		<header class="header">
+			<div class="header__text-box">
+				<h1>
+					<span class="text-gradient__main">IMPONTE</span><br /><span
+						class="text-gradient__shadow">ROLEPLAY</span
+					>
+				</h1>
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+					nesciunt temporibus eligendi, porro itaque tempore. In facere suscipit
+					eligendi itaque.
+				</p>
+			</div>
+		</header>
+
+		<section class="about section-padding" id="about">
+			<SectionTitle tac title="Więcej informacji" subtitle="O serwerze" />
+			<div class="wrapper">
+				<div class="about__container">
+					<div class="about__box">
+						<h3>Doskonała optymiazacja</h3>
+						<p class="about__box-text">
+							Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+							Blanditiis expedita culpa quae consequuntur, rem qui! Lorem ipsum
+							dolor sit amet consectetur, adipisicing elit. Minima facilis,
+							animi delectus suscipit dolorem eaque quasi magnam? Quasi, enim
+							facilis.
+						</p>
+					</div>
+					<div class="about__box about__box--img about__box--img--1 border">
+						<div class="about__box-content"></div>
+					</div>
+				</div>
+				<div class="about__container about__container--right">
+					<div class="about__box">
+						<h3>Autorskie skrypty</h3>
+						<p class="about__box-text">
+							Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+							Blanditiis expedita culpa quae consequuntur, rem qui! Lorem ipsum
+							dolor sit amet consectetur, adipisicing elit. Minima facilis,
+							animi delectus suscipit dolorem eaque quasi magnam? Quasi, enim
+							facilis.
+						</p>
+					</div>
+					<div class="about__box about__box--img about__box--img--2 border">
+						<div class="about__box-content"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="features section-padding" id="features">
+			<div class="wrapper">
+				<SectionTitle
+					title="Dlaczego warto wybrać nasz serwer?"
+					subtitle="Nasze innowacyjne mechaniki"
+				/>
+				<div class="features__container">
+					<div class="features__box border">
+						<div class="features__box-content">
+							<h4>Funkcja</h4>
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+								sed accusantium in, quas autem a.
+							</p>
+						</div>
+					</div>
+					<div class="features__box border">
+						<div class="features__box-content">
+							<h4>Funkcja</h4>
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+								sed accusantium in, quas autem a.
+							</p>
+						</div>
+					</div>
+					<div class="features__box border">
+						<div class="features__box-content">
+							<h4>Funkcja</h4>
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+								sed accusantium in, quas autem a.
+							</p>
+						</div>
+					</div>
+					<div class="features__box features__box--mobile-off border">
+						<div class="features__box-content">
+							<h4>Funkcja</h4>
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+								sed accusantium in, quas autem a.
+							</p>
+						</div>
+					</div>
+					<div class="features__box features__box--mobile-off border">
+						<div class="features__box-content">
+							<h4>Funkcja</h4>
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+								sed accusantium in, quas autem a.
+							</p>
+						</div>
+					</div>
+					<div class="features__box features__box--mobile-off border">
+						<div class="features__box-content">
+							<h4>Funkcja</h4>
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+								sed accusantium in, quas autem a.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="join-us section-padding">
+			<div class="wrapper">
+				<SectionTitle
+					tac
+					title="Dołącz do naszej społeczności już dziś!"
+					subtitle="Na co jeszcze czekasz?"
+				/>
+				<div class="join-us__container">
+					<p class="tac join-us__text">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+						voluptas eos nulla voluptatibus repellat pariatur?
+					</p>
+					<div class="join-us__btn-box">
+						<LinkButton href="./"
+							>Discord <i class="fa-brands fa-discord"></i></LinkButton
+						>
+						<LinkButton href="./"
+							>YouTube <i class="fa-brands fa-youtube"></i></LinkButton
+						>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+</LayoutMain>
+
+<script src="../js/components/border-glow.js"></script>

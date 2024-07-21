@@ -1,0 +1,18 @@
+---
+interface Props {
+	title?: string;
+	subtitle?: string;
+	tac?: boolean;
+}
+
+const {
+	title = "Section title",
+	subtitle = "Section subtitle",
+	tac = false,
+} = Astro.props;
+---
+
+<div class={`section-title-box ${tac !== false ? `tac` : ""}`.trim()}>
+	<p class="text-gradient__solid fw-600">{subtitle}</p>
+	<h2 class="text-gradient__shadow">{title}</h2>
+</div>

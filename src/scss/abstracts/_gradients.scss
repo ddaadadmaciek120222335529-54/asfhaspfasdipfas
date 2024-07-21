@@ -1,0 +1,29 @@
+@use "./variables" as *;
+
+// ===========================================================================
+// Gradients
+// ===========================================================================
+
+.text-gradient {
+	&__shadow {
+		background: $color-text;
+		background: $text-gradient-shadow;
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+
+	&__main {
+		background: $color-text;
+		background: $text-gradient-1;
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+
+	&__solid {
+		color: $color-500;
+	}
+}
+
+// .bg-gradient {
+// 	&__1 {}
+// }

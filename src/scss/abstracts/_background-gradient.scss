@@ -1,0 +1,136 @@
+@use "./variables" as *;
+
+// ===========================================================================
+// Gradients
+// ===========================================================================
+
+.background-gradient {
+	&__container {
+		z-index: -1;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+	}
+
+	&--1 {
+		position: absolute;
+		top: 45%;
+		left: 5%;
+		width: 75px;
+		height: 75px;
+		background: radial-gradient(
+			circle,
+			rgba(237, 182, 109, 1) 0%,
+			rgba(232, 157, 79, 1) 50%,
+			rgba(227, 130, 44, 1) 100%
+		);
+		filter: blur(100px);
+	}
+
+	&--2 {
+		position: absolute;
+		top: 15%;
+		left: 95%;
+		width: 150px;
+		height: 150px;
+		background: radial-gradient(
+			circle,
+			rgba(237, 182, 109, 1) 0%,
+			rgba(232, 157, 79, 1) 50%,
+			rgba(227, 130, 44, 1) 100%
+		);
+		filter: blur(150px);
+	}
+
+	&--3 {
+		position: absolute;
+		top: 60%;
+		left: 90%;
+		width: 200px;
+		height: 200px;
+		background: radial-gradient(
+			circle,
+			rgba(237, 182, 109, 1) 0%,
+			rgba(232, 157, 79, 1) 50%,
+			rgba(227, 130, 44, 1) 100%
+		);
+		filter: blur(200px);
+	}
+
+	&--4 {
+		position: absolute;
+		top: 50%;
+		left: 20%;
+		width: 50px;
+		height: 50px;
+		background: radial-gradient(
+			circle,
+			rgba(237, 182, 109, 1) 0%,
+			rgba(232, 157, 79, 1) 50%,
+			rgba(227, 130, 44, 1) 100%
+		);
+		filter: blur(100px);
+	}
+}
+
+@media (min-width: 576px) {
+	.background-gradient {
+		&--1 {
+			width: 100px;
+			height: 100px;
+			filter: blur(150px);
+		}
+
+		&--2 {
+			width: 200px;
+			height: 200px;
+			filter: blur(150px);
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	// .background-gradient {}
+}
+
+@media (min-width: 992px) {
+	// .background-gradient {}
+}
+
+@media (min-width: 1200px) {
+	.background-gradient {
+		&--1 {
+			top: 25%;
+			width: 200px;
+			height: 200px;
+			filter: blur(200px);
+		}
+
+		&--2 {
+			left: 85%;
+			width: 300px;
+			height: 300px;
+			filter: blur(230px);
+		}
+
+		&--3 {
+			top: 55%;
+			left: 80%;
+		}
+	}
+}
+
+@media (min-width: 1400px) {
+	.background-gradient {
+		&--4 {
+			top: 50%;
+			left: 5%;
+			width: 200px;
+			height: 200px;
+			filter: blur(200px);
+		}
+	}
+}

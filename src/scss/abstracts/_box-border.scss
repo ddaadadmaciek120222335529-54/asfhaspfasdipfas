@@ -1,0 +1,42 @@
+@use "./variables" as *;
+
+// ===========================================================================
+// Custom Border
+// ===========================================================================
+
+.border {
+	position: relative;
+	padding: 4px;
+
+	--x-px: calc(var(--x) * 1px);
+	--y-px: calc(var(--y) * 1px);
+
+	&:before {
+		z-index: -1;
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		// border: 4px solid black;
+		border-radius: $border-radius;
+		background: radial-gradient(
+			1200px circle at var(--x-px) var(--y-px),
+			rgb(191, 135, 61),
+			transparent 40%
+		);
+		color: rgb(191, 135, 61);
+	}
+
+	&:after {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		border-radius: $border-radius;
+		border: 4px solid rgba(0, 0, 0, 0.5);
+	}
+}

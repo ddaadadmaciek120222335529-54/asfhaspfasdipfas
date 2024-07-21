@@ -1,0 +1,40 @@
+---
+interface Props {
+	href: string;
+	targetBlank?: boolean;
+	background?: "solid" | "gradient" | "transparent";
+	border?: "solid" | "gradient";
+	shape?: "normal" | "pill" | "circle";
+	hover?: "brightness" | "solid" | "gradient";
+	click?: "pulse" | "none";
+	form?: "send" | "clear";
+}
+
+const {
+	href,
+	targetBlank,
+	background = "transparent",
+	border = "solid",
+	shape = "default",
+	hover = "solid",
+	click = "pulse",
+	form = "none",
+} = Astro.props;
+---
+
+<a
+	class={`link-btn btn ${shape !== "normal" ? `btn__border-radius--${shape}` : ""} ${hover ? `btn__hover--${hover}` : ""} ${click !== "none" ? `btn__click-${click}` : ""} ${form !== "none" ? `btn-form-${form}` : ""}`.trim()}
+	href={href}
+	{...targetBlank
+		? { target: "_blank", rel: "nofollow noopener noreferrer external" }
+		: {}}
+>
+	<div class={`btn__background btn__background--${background}`}></div>
+	<div class={`btn__border btn__border--${border}`}></div>
+	<span class="btn__text">
+		<slot />
+	</span>
+</a>
+
+<!-- Click animation -->
+<script src="../../js/components/buttonClick.js"></script>

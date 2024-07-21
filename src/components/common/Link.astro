@@ -1,0 +1,19 @@
+---
+interface Props {
+	href: string;
+	targetBlank?: boolean;
+	hover?: "color" | "brightness";
+}
+
+const { href, targetBlank, hover = "brightness" } = Astro.props;
+---
+
+<a
+	class={`link link__hover--${hover}`}
+	href={href}
+	{...targetBlank
+		? { target: "_blank", rel: "nofollow noopener noreferrer external" }
+		: {}}
+>
+	<slot /></a
+>

@@ -1,0 +1,56 @@
+---
+import Link from "../../components/common/Link.astro";
+---
+
+<footer class="footer">
+	<div class="wrapper section-padding">
+		<div class="footer__container">
+			<div class="footer__box">
+				<Link href="./#">
+					<img class="nav__logo" src="./logo.png" alt="Imponte Roleplay Logo" />
+				</Link>
+				<p>
+					Twórz własne historie, spotykaj ciekawych ludzi i odkrywaj nowe
+					możliwości w Los Santos. Dołącz teraz i zobacz, dlaczego nasz serwer
+					to najlepsze miejsce dla fanów RP. Czekamy na ciebie!
+				</p>
+			</div>
+			<div class="footer__part">
+				<div class="footer__box">
+					<h4>Sekcje</h4>
+					<div class="footer__link-box">
+						<Link href="./#about">O serwerze</Link>
+						<Link href="./#features">Mechaniki</Link>
+						<Link href="./regulamin">Regulamin</Link>
+					</div>
+				</div>
+				<div class="footer__box">
+					<h4>Społeczność</h4>
+					<div class="footer__link-box">
+						<Link href="https://discord.gg/SYFyCYMXxg" targetBlank
+							>Discord <i class="fa-brands fa-discord"></i></Link
+						>
+						<Link href="https://www.youtube.com/" targetBlank
+							>Youtube <i class="fa-brands fa-youtube"></i></Link
+						>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer__bottom-container">
+		<div class="wrapper">
+			<div class="footer__bottom-box">
+				Copyright © <span class="footer__year"></span> Imponte Roleplay. Wszelkie
+				prawa zastrzeżone.
+			</div>
+			<div class="footer__bottom-box">
+				<Link href="https://discord.gg/JD6skWZQwG" targetBlank
+					>Twórca strony: <span class="footer__author">chill.1337</span></Link
+				>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<script src="../../js/components/footer.js"></script>

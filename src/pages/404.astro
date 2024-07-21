@@ -1,0 +1,29 @@
+---
+// Layout
+import LayoutMain from "../layouts/LayoutMain.astro";
+
+// Components
+const head = {
+	title: "Błąd 404 | Imponte Roleplay",
+	description: "Nie odnaleziono strony",
+};
+---
+
+<LayoutMain title=`${head.title}` description=`${head.description}`>
+	<div class="background-gradient__container">
+		<div class="background-gradient--2"></div>
+		<div class="background-gradient--4"></div>
+	</div>
+
+	<section class="no-site">
+		<div class="wrapper">
+			<div class="no-site__container">
+				<h2 class="text-gradient__shadow">Nie odnaleziono strony</h2>
+				<p>
+					Strona, którą chcesz oglądać mogła zostać usunięta lub tymczasowo jest
+					niedostępna.
+				</p>
+			</div>
+		</div>
+	</section>
+</LayoutMain>

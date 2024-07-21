@@ -1,0 +1,51 @@
+@use "./variables" as *;
+
+// ===========================================================================
+// Section
+// ===========================================================================
+
+// section {
+// border: 1px solid royalblue;
+// }
+
+html {
+	scroll-padding-top: 100px;
+}
+
+.section-padding {
+	padding: $section-padding-sm 0;
+}
+
+@media (min-width: 576px) {
+	.section-padding {
+		padding: $section-padding-md 0;
+	}
+}
+
+@media (min-width: 768px) {
+	// html {
+	// scroll-padding-top: calc(92px + ($section-padding-lg / 2));
+	// }
+
+	.section-padding {
+		padding: $section-padding-lg 0;
+	}
+}
+
+@media (min-width: 992px) {
+	// html {
+	// scroll-padding-top: calc(80px + ($section-padding-xl / 2));
+	// }
+
+	.section-padding {
+		padding: $section-padding-xl 0;
+	}
+}
+
+@media (min-width: 1200px) {
+	// .section-padding {}
+}
+
+@media (min-width: 1400px) {
+	// .section-padding {}
+}
